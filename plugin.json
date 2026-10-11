@@ -1,0 +1,33 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "pstack-codex",
+  "version": "0.1.0",
+  "description": "A Codex-native port of pstack's rigorous engineering workflows and principles.",
+  "author": {
+    "name": "Worapol Buraphan"
+  },
+  "homepage": "https://github.com/worapolburaphan/pstack-codex",
+  "repository": "https://github.com/worapolburaphan/pstack-codex",
+  "license": "MIT",
+  "keywords": ["codex", "engineering", "verification", "code-review", "agent-skills"],
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/setup-pstack/SKILL.md",
+      "interface": {
+        "displayName": "pstack for Codex",
+        "shortDescription": "Rigorous Codex engineering workflows",
+        "longDescription": "A Codex-native port of pstack with evidence-first investigation, design, implementation, review, and shipping workflows.",
+        "developerName": "Worapol Buraphan",
+        "category": "Developer Tools",
+        "capabilities": ["Read", "Write"],
+        "websiteURL": "https://github.com/worapolburaphan/pstack-codex",
+        "defaultPrompt": [
+          "Use pstack mode for this engineering task.",
+          "Investigate this bug, fix the root cause, and verify the result."
+        ],
+        "composerIcon": "./assets/logo.png",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}

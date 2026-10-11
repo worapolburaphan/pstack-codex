@@ -1,0 +1,11 @@
+{
+  "name": "pstack-codex",
+  "version": "0.1.0",
+  "description": "A Codex-native port of pstack's rigorous engineering workflows and principles.",
+  "skills": "./skills/",
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/setup-pstack/SKILL.md"
+    }
+  }
+}
